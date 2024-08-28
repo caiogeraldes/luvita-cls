@@ -232,6 +232,8 @@ function luwian_transcription(v)
 	s = string.gsub(s, "hwi", "𔘰") -- No variant
 	s = string.gsub(s, "hwa", "𔘰") -- No variant
 	-- wa series
+	s = string.gsub(s, "wá", "𔓁") -- No variant
+	s = string.gsub(s, "wí", "𔓁") -- No variant
 	s = string.gsub(s, "wa", "𔗬") -- No variant
 	s = string.gsub(s, "wi", "𔗬") -- No variant
 	-- ia series
