@@ -343,8 +343,8 @@
 }{}
 \newenvironment{parnumbersr}[2][§]{%
 	\par%
-	\everypar{\hangpara{3em}{1}\stepcounter{parcount} \textnormal{\normalsize\parnumr{#1}}
-		\tabto{2em}}%
+	\everypar{\hangpara{6em}{1}\stepcounter{parcount} \textnormal{\normalsize\parnumr{#1}}
+		\tabto{5em}}%
 }{}
 \newcommand{\abreviacao}[2]{\noindent #1 \hspace{10pt}\hfill #2\\}
 \newenvironment{abreviacoes}{
