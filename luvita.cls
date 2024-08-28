@@ -1,10 +1,18 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{luvita}[2024/08/28 Apostila Luvita]
 
-\DeclareOption*{\PassOptionsToClass{\CurrentOption}{memoir}}
+\DeclareOption{article}{
+	\AtBeginDocument{\pagestyle{plain}}
+	\AtBeginDocument{\chapterstyle{article}}
+	\PassOptionsToClass{article}{memoir}}
+\DeclareOption{apostila}{
+	\AtBeginDocument{\pagestyle{companion}}
+	\AtBeginDocument{\chapterstyle{hangnum}}
+}
 \ProcessOptions\relax
 
 \LoadClass[a4paper,12pt]{memoir}
+
 
 % Dependencies
 \RequirePackage{ccicons}
@@ -202,7 +210,6 @@
 }
 
 % Decorando divisões
-\chapterstyle{hangnum}
 \setsecnumdepth{subsection}
 \setcounter{tocdepth}{3}
 \newcommand\chap[1]{%
@@ -284,7 +291,6 @@
 
 		}
 }
-\pagestyle{companion}
 
 
 \RequirePackage[tracking=true]{microtype}
