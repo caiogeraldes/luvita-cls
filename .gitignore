@@ -20,7 +20,7 @@
 # these rules might exclude image files for figures etc.
 # *.ps
 # *.eps
-# *.pdf
+*.pdf
 
 ## generated if empty string is given at "please type another file name for output:"
 .pdf
